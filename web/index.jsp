@@ -38,5 +38,7 @@
       %>
   </table>
   <a href="add.jsp">新增</a>
+  <a href="Servlet">aaaa</a>
+  <a href="MyServlet">bbbbbbbbbbb</a>
   </body>
 </html>
