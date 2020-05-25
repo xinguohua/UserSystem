@@ -21,6 +21,7 @@ public class Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = new User(12,"xgh","111","math","131","@qq.com");
         Map<String,Object> map = new HashMap<>();
+        System.out.println("serlvlet============");
         map.put("cn","中国");
         map.put("us","美国");
         request.setAttribute("map",map);

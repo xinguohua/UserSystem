@@ -14,13 +14,25 @@
 
 
     <!-- 配置过滤器 -->
-    <filter>
-        <filter-name>MyServlet</filter-name>
-        <filter-class>cn.tju.filter.MyFilter</filter-class>
-    </filter>
+    <!--<filter>-->
+        <!--<filter-name>MyServlet</filter-name>-->
+        <!--<filter-class>cn.tju.filter.MyFilter</filter-class>-->
+    <!--</filter>-->
 
-   <filter-mapping>
-        <filter-name>MyServlet</filter-name>
-        <url-pattern>/MyServlet</url-pattern>
-    </filter-mapping>
+   <!--<filter-mapping>-->
+        <!--<filter-name>MyServlet</filter-name>-->
+         <!--<url-pattern>/*</url-pattern>-->
+         <!--<dispatcher>REQUEST</dispatcher>-->
+         <!--<dispatcher>FORWARD</dispatcher>-->
+    <!--</filter-mapping>-->
+
+
+    <!--配置监听器-->
+    <!--<listener>-->
+        <!--<listener-class>cn.tju.Listener.ServletListener</listener-class>-->
+    <!--</listener>-->
+    <listener>
+        <listener-class>cn.tju.Listener.Attribute</listener-class>
+    </listener>
+
 </web-app>
